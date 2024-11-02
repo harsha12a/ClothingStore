@@ -5,7 +5,7 @@ function LoginStore({children}) {
     let [status,setStatus] = useState(false)
     let [err,setErr] = useState('')
     useEffect(()=>{
-        if(localStorage.getItem('user')===null){
+        if(sessionStorage.getItem('user')===null){
             setStatus(false)
         }
         else{
@@ -21,7 +21,7 @@ function LoginStore({children}) {
             }
             else if(response.data[0].password===data.password){
                 setStatus(true)
-                localStorage.setItem('user',JSON.stringify(response.data[0]))
+                sessionStorage.setItem('user',JSON.stringify(response.data[0]))
                 setErr('')
             }
             else setErr('Incorrect password')
@@ -33,7 +33,7 @@ function LoginStore({children}) {
     }
     const logoutuser = () =>{
         setStatus(false)
-        localStorage.removeItem('user')
+        sessionStorage.removeItem('user')
     }
   return (
     <loginContext.Provider value={{loginuser,logoutuser,status,setStatus,err,setErr}}>
