@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
+import axios from 'axios'
+import { loginContext } from '../../context/loginContext'
 function Login() {
     let {handleSubmit,register,formState:{errors}} = useForm()
-    const loginuser = (data) => {
-        console.log(data)
-    }
+    let {loginuser,logoutuser,err} = useContext(loginContext)
   return (
     <div className='container mt-5'>
+        {err && <p className='text-danger fs-1 text-center norfont'>{err}</p>}
         <h1 className='text-center'>Login</h1>
         <div className='row'>
             <form action="" className='col-sm-10 m-auto col-md-6 col-lg-4' onSubmit={handleSubmit(loginuser)}>

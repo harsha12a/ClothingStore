@@ -1,14 +1,17 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import './Register.css'
+import axios from 'axios'
 function Register() {
     let {handleSubmit,register,formState:{errors}} = useForm()
-    const reguser = (obj)=>{
+    const reguser = async (obj)=>{
         if(obj.password !== obj.conpassword){
             alert("Password does not match")
         }
-        else
-        console.log(obj)
+        else{
+            const response = await axios.post('http://localhost:3000/users',obj)
+            if(response.status===201) console.log('Successfully registered')
+        }
     }
   return (
     <div className='container mt-5'>
