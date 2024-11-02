@@ -1,9 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {loginContext} from './loginContext'
 import axios from 'axios'
 function LoginStore({children}) {
     let [status,setStatus] = useState(false)
     let [err,setErr] = useState('')
+    useEffect(()=>{
+        if(localStorage.getItem('user')===null){
+            setStatus(false)
+        }
+        else{
+            setStatus(true)
+        }
+    })
     const loginuser = async (data) => {
         try{
             const response = await axios.get(`http://localhost:3000/users?email=${data.email}`)

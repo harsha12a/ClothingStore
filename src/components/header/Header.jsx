@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {Link} from 'react-router-dom'
 import './Header.css'
+import { loginContext } from '../../context/loginContext'
 function Header() {
+  let {logoutuser,status} = useContext(loginContext)
   return (
     <div className='d-flex justify-content-between align-items-center flex-wrap'>
         <p className='display-3 fonting'><Link to={'/'} className='nav-link text-dark fonting'>ClothingStore</Link></p>
-        <ul className='nav'>
+        {!status?
+        (<ul className='nav'>
             <li className='nav-item'><Link to={'/signup'} className='nav-link links'>Sign Up</Link></li>
             <li className='nav-item'><Link to={'/login'} className='nav-link links'>Sign in</Link></li>
             <li className='nav-item'><Link to={'/about'} className='nav-link links'>About  </Link></li>
-        </ul>
+        </ul>)
+        :(
+          <ul className='nav'>
+            <li className='nav-item'><Link onClick={logoutuser} to={'/login'} className='nav-link links'>Logout</Link></li>
+            <li className='nav-item'><Link to={'/about'} className='nav-link links'>About  </Link></li>
+            <li className='nav-item'><Link to={'/profile'} className="nav-link links">Profile</Link></li>
+          </ul>)}
     </div>
   )
 }

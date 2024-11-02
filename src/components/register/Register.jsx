@@ -2,15 +2,19 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import './Register.css'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 function Register() {
     let {handleSubmit,register,formState:{errors}} = useForm()
+    let navigate = useNavigate()
     const reguser = async (obj)=>{
         if(obj.password !== obj.conpassword){
             alert("Password does not match")
         }
         else{
             const response = await axios.post('http://localhost:3000/users',obj)
-            if(response.status===201) console.log('Successfully registered')
+            if(response.status===201){
+                navigate('/login')
+            }
         }
     }
   return (

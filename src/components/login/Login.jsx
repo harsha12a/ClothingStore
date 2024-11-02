@@ -1,10 +1,16 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
-import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 import { loginContext } from '../../context/loginContext'
 function Login() {
+    let navigate = useNavigate()
     let {handleSubmit,register,formState:{errors}} = useForm()
-    let {loginuser,logoutuser,err} = useContext(loginContext)
+    let {loginuser,status,err} = useContext(loginContext)
+    useEffect(()=>{
+        if(status===true){
+            navigate('/profile')
+        }
+    },[status])
   return (
     <div className='container mt-5'>
         {err && <p className='text-danger fs-1 text-center norfont'>{err}</p>}

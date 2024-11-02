@@ -7,220 +7,228 @@
       "username": "red",
       "password": "red",
       "conpassword": "red"
+    },
+    {
+      "id": "64d5",
+      "name": "Blue",
+      "email": "blue@gmail.com",
+      "username": "blue",
+      "password": "blue",
+      "conpassword": "blue"
     }
   ],
-    "products": {
-      "watches": [
+  "products": {
+    "watches": [
+      {
+        "name": "Casio F91W",
+        "price": 20
+      },
+      {
+        "name": "Apple Watch Series 8",
+        "price": 399
+      },
+      {
+        "name": "Samsung Galaxy Watch 4",
+        "price": 250
+      },
+      {
+        "name": "Fossil Gen 5",
+        "price": 315
+      },
+      {
+        "name": "Seiko 5 Automatic",
+        "price": 150
+      },
+      {
+        "name": "Garmin Forerunner 245",
+        "price": 350
+      },
+      {
+        "name": "Tissot PR 100",
+        "price": 350
+      },
+      {
+        "name": "Timex Weekender",
+        "price": 40
+      },
+      {
+        "name": "Huawei Watch GT 2",
+        "price": 180
+      },
+      {
+        "name": "Michael Kors Runway",
+        "price": 250
+      }
+    ],
+    "hats": [
+      {
+        "name": "Carhartt Beanie",
+        "price": 25
+      },
+      {
+        "name": "Adidas Bucket Hat",
+        "price": 30
+      },
+      {
+        "name": "Nike Baseball Cap",
+        "price": 28
+      },
+      {
+        "name": "Puma Trucker Hat",
+        "price": 22
+      },
+      {
+        "name": "Under Armour Visor",
+        "price": 20
+      },
+      {
+        "name": "Roxy Sun Hat",
+        "price": 35
+      },
+      {
+        "name": "Columbia Outdoor Hat",
+        "price": 32
+      },
+      {
+        "name": "Brixton Fedora",
+        "price": 60
+      },
+      {
+        "name": "New Era Snapback",
+        "price": 40
+      },
+      {
+        "name": "Patagonia Capilene Beanie",
+        "price": 28
+      }
+    ],
+    "shoes": [
+      {
+        "name": "Nike Sneakers",
+        "price": 100
+      },
+      {
+        "name": "Teva Sandals",
+        "price": 60
+      },
+      {
+        "name": "Adidas UltraBoost",
+        "price": 180
+      },
+      {
+        "name": "Converse Chuck Taylor All Star",
+        "price": 55
+      },
+      {
+        "name": "Vans Old Skool",
+        "price": 65
+      },
+      {
+        "name": "New Balance 574",
+        "price": 80
+      },
+      {
+        "name": "Crocs Classic Clogs",
+        "price": 50
+      },
+      {
+        "name": "Havaianas Flip Flops",
+        "price": 20
+      },
+      {
+        "name": "ASICS Gel-Kayano",
+        "price": 160
+      },
+      {
+        "name": "Brooks Ghost 14",
+        "price": 140
+      }
+    ],
+    "clothing": {
+      "men": [
         {
-          "name": "Casio F91W",
-          "price": 20
+          "name": "H&M T-Shirt",
+          "price": 15
         },
         {
-          "name": "Apple Watch Series 8",
-          "price": 399
+          "name": "Levi's Jeans",
+          "price": 60
         },
         {
-          "name": "Samsung Galaxy Watch 4",
-          "price": 250
-        },
-        {
-          "name": "Fossil Gen 5",
-          "price": 315
-        },
-        {
-          "name": "Seiko 5 Automatic",
-          "price": 150
-        },
-        {
-          "name": "Garmin Forerunner 245",
-          "price": 350
-        },
-        {
-          "name": "Tissot PR 100",
-          "price": 350
-        },
-        {
-          "name": "Timex Weekender",
-          "price": 40
-        },
-        {
-          "name": "Huawei Watch GT 2",
-          "price": 180
-        },
-        {
-          "name": "Michael Kors Runway",
-          "price": 250
-        }
-      ],
-      "hats": [
-        {
-          "name": "Carhartt Beanie",
-          "price": 25
-        },
-        {
-          "name": "Adidas Bucket Hat",
-          "price": 30
-        },
-        {
-          "name": "Nike Baseball Cap",
-          "price": 28
-        },
-        {
-          "name": "Puma Trucker Hat",
-          "price": 22
-        },
-        {
-          "name": "Under Armour Visor",
-          "price": 20
-        },
-        {
-          "name": "Roxy Sun Hat",
+          "name": "Nike Dri-FIT Shorts",
           "price": 35
         },
         {
-          "name": "Columbia Outdoor Hat",
-          "price": 32
+          "name": "Adidas Tracksuit",
+          "price": 70
         },
         {
-          "name": "Brixton Fedora",
-          "price": 60
+          "name": "Polo Ralph Lauren Polo Shirt",
+          "price": 70
         },
         {
-          "name": "New Era Snapback",
-          "price": 40
-        },
-        {
-          "name": "Patagonia Capilene Beanie",
-          "price": 28
-        }
-      ],
-      "shoes": [
-        {
-          "name": "Nike Sneakers",
-          "price": 100
-        },
-        {
-          "name": "Teva Sandals",
-          "price": 60
-        },
-        {
-          "name": "Adidas UltraBoost",
-          "price": 180
-        },
-        {
-          "name": "Converse Chuck Taylor All Star",
-          "price": 55
-        },
-        {
-          "name": "Vans Old Skool",
-          "price": 65
-        },
-        {
-          "name": "New Balance 574",
+          "name": "Tommy Hilfiger Hoodie",
           "price": 80
         },
         {
-          "name": "Crocs Classic Clogs",
+          "name": "Under Armour Compression Shirt",
+          "price": 40
+        },
+        {
+          "name": "Gap Chino Pants",
           "price": 50
         },
         {
-          "name": "Havaianas Flip Flops",
+          "name": "Old Navy Button-Up Shirt",
+          "price": 30
+        },
+        {
+          "name": "Zara Casual Jacket",
+          "price": 100
+        }
+      ],
+      "women": [
+        {
+          "name": "ASOS Dress",
+          "price": 50
+        },
+        {
+          "name": "Zara Blouse",
+          "price": 40
+        },
+        {
+          "name": "H&M Maxi Skirt",
+          "price": 30
+        },
+        {
+          "name": "Forever 21 Crop Top",
           "price": 20
         },
         {
-          "name": "ASICS Gel-Kayano",
-          "price": 160
+          "name": "Gap Cardigan",
+          "price": 60
         },
         {
-          "name": "Brooks Ghost 14",
-          "price": 140
+          "name": "Mango Wide Leg Pants",
+          "price": 55
+        },
+        {
+          "name": "Boohoo Jumpsuit",
+          "price": 45
+        },
+        {
+          "name": "Uniqlo Parka",
+          "price": 80
+        },
+        {
+          "name": "Lulus A-Line Skirt",
+          "price": 35
+        },
+        {
+          "name": "Anthropologie Sweater",
+          "price": 70
         }
-      ],
-      "clothing": {
-        "men": [
-          {
-            "name": "H&M T-Shirt",
-            "price": 15
-          },
-          {
-            "name": "Levi's Jeans",
-            "price": 60
-          },
-          {
-            "name": "Nike Dri-FIT Shorts",
-            "price": 35
-          },
-          {
-            "name": "Adidas Tracksuit",
-            "price": 70
-          },
-          {
-            "name": "Polo Ralph Lauren Polo Shirt",
-            "price": 70
-          },
-          {
-            "name": "Tommy Hilfiger Hoodie",
-            "price": 80
-          },
-          {
-            "name": "Under Armour Compression Shirt",
-            "price": 40
-          },
-          {
-            "name": "Gap Chino Pants",
-            "price": 50
-          },
-          {
-            "name": "Old Navy Button-Up Shirt",
-            "price": 30
-          },
-          {
-            "name": "Zara Casual Jacket",
-            "price": 100
-          }
-        ],
-        "women": [
-          {
-            "name": "ASOS Dress",
-            "price": 50
-          },
-          {
-            "name": "Zara Blouse",
-            "price": 40
-          },
-          {
-            "name": "H&M Maxi Skirt",
-            "price": 30
-          },
-          {
-            "name": "Forever 21 Crop Top",
-            "price": 20
-          },
-          {
-            "name": "Gap Cardigan",
-            "price": 60
-          },
-          {
-            "name": "Mango Wide Leg Pants",
-            "price": 55
-          },
-          {
-            "name": "Boohoo Jumpsuit",
-            "price": 45
-          },
-          {
-            "name": "Uniqlo Parka",
-            "price": 80
-          },
-          {
-            "name": "Lulus A-Line Skirt",
-            "price": 35
-          },
-          {
-            "name": "Anthropologie Sweater",
-            "price": 70
-          }
-        ]
-      }
+      ]
     }
+  }
 }
