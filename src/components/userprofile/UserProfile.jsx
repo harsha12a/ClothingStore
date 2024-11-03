@@ -5,8 +5,12 @@ function UserProfile() {
     let user = JSON.parse(sessionStorage.getItem('user'))
     let {status} = useContext(loginContext)
   return (
-    <div>
-        <p className="display-1 text-center">{status? "Welcome "+user.name : "Please Login"}</p>
+    <div className='pt-5'>
+        <p className="display-1 text-center">{status? "Welcome "+user.username : "Please Login"}</p>
+        <div className='col-4 m-auto card'>
+          <p className=" text-center">{status? "Email - "+user.email : ""}</p>
+          <p className=" text-center">{status? "Name - "+user.name : ""}</p>
+        </div>
         <Cart />
     </div>
   )

@@ -5,7 +5,7 @@ import { loginContext } from '../../context/loginContext'
 function Header() {
   let {logoutuser,status} = useContext(loginContext)
   return (
-    <div className='d-flex justify-content-between align-items-center flex-wrap'>
+    <div className='d-flex justify-content-between align-items-center flex-wrap border'>
         <p className='display-3 fonting'><Link to={'/'} className='nav-link text-dark fonting'>ClothingStore</Link></p>
         {!status?
         (<ul className='nav'>

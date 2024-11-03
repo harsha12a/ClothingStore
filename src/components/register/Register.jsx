@@ -11,6 +11,7 @@ function Register() {
             alert("Password does not match")
         }
         else{
+            obj.cart = []
             const response = await axios.post('http://localhost:3000/users',obj)
             if(response.status===201){
                 navigate('/login',{state:{msg:"Registered successfully"}})

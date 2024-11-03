@@ -8,7 +8,7 @@ function Hats() {
         setProducts(res.data.hats)
       })
   return (
-    <div>
+    <div className='mt-5 container'>
         <h1 className='text-center'>Hats</h1>
         <div className='d-flex flex-wrap justify-content-evenly'>
             {
