@@ -63,43 +63,53 @@
     "hats": [
       {
         "name": "Carhartt Beanie",
-        "price": 25
+        "price": 25,
+        "image": "https://i.pinimg.com/736x/d4/47/18/d44718e1448a19477c1530018c2b04e8.jpg"
       },
       {
         "name": "Adidas Bucket Hat",
-        "price": 30
+        "price": 30,
+        "image": "https://m.media-amazon.com/images/I/81pQDgkVfCL._SX679_.jpg"
       },
       {
         "name": "Nike Baseball Cap",
-        "price": 28
+        "price": 28,
+        "image": "https://m.media-amazon.com/images/I/61knsxwxbXL._AC_UF894,1000_QL80_.jpg"
       },
       {
         "name": "Puma Trucker Hat",
-        "price": 22
+        "price": 22,
+        "image": "https://m.media-amazon.com/images/I/71PLb82PelL._SX679_.jpg"
       },
       {
         "name": "Under Armour Visor",
-        "price": 20
+        "price": 20,
+        "image": "https://waycaps.com/cdn/shop/products/v1-solid-velcro-baseball-cap-waycap-inc-17_550x.jpg?v=1704337753"
       },
       {
         "name": "Roxy Sun Hat",
-        "price": 35
+        "price": 35,
+        "image": "https://eoncompany.com/cdn/shop/files/NAVY.jpg?v=1724254124&width=1946"
       },
       {
         "name": "Columbia Outdoor Hat",
-        "price": 32
+        "price": 32,
+        "image": "https://m.media-amazon.com/images/I/71MkSAi3p1L._AC_UY1100_.jpg"
       },
       {
         "name": "Brixton Fedora",
-        "price": 60
+        "price": 60,
+        "image": "https://m.media-amazon.com/images/I/41KcZ7PeNUL._AC_UY1100_.jpg"
       },
       {
         "name": "New Era Snapback",
-        "price": 40
+        "price": 40,
+        "image": "https://m.media-amazon.com/images/I/51hsWnr8isL._AC_UY1100_.jpg"
       },
       {
         "name": "Patagonia Capilene Beanie",
-        "price": 28
+        "price": 28,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs0Lhw_Ii-ozq7TAOjRUd7dHATzxQkOYXFVg&s"
       }
     ],
     "shoes": [

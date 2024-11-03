@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import {RouterProvider,createBrowserRouter} from 'react-router-dom'
+import {Navigate, RouterProvider,createBrowserRouter} from 'react-router-dom'
 import Rootlayout from './Rootlayout'
 import Home from './components/home/Home'
 import About from './components/about/About'
@@ -8,6 +8,7 @@ import Login from './components/login/Login'
 import Register from './components/register/Register'
 import UserProfile from './components/userprofile/UserProfile'
 import Cart from './components/cart/Cart'
+import Hats from './components/hats/Hats'
 function App() {
   const browser = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ function App() {
           element: <About />
         },
         {
+          path: '/hats',
+          element: <Hats />
+        },
+        {
           path: '/profile',
           element: <UserProfile />,
           children:[
@@ -39,6 +44,10 @@ function App() {
               element: <Cart />
             }
           ]
+        },
+        {
+          path: '*',
+          element: <Navigate to={'/'} />
         }
       ]
     }
