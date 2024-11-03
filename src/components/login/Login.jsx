@@ -2,15 +2,34 @@ import React, { useContext, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import { loginContext } from '../../context/loginContext'
+import { useLocation } from 'react-router-dom'
+import { toast,ToastContainer,Bounce } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 function Login() {
     let navigate = useNavigate()
     let {handleSubmit,register,formState:{errors}} = useForm()
+    let location = useLocation()
+    let msg = location.state?.msg
     let {loginuser,status,err} = useContext(loginContext)
     useEffect(()=>{
         if(status===true){
-            navigate('/profile')
+            navigate('/',{state:{msg:"Login success"}})
         }
     },[status])
+    useEffect(()=>{
+        if(msg){
+            toast('🎉 Registration successful', {
+                position: "top-center",
+                autoClose: 5000,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                transition: Bounce,
+            });
+        }
+    },[msg])
   return (
     <div className='container mt-5'>
         {err && <p className='text-danger fs-1 text-center norfont'>{err}</p>}
@@ -30,6 +49,7 @@ function Login() {
                 <input type="submit"value={"Login"} className='mt-3 btn btn-primary w-100'/>
             </form>
         </div>
+        <ToastContainer />
     </div>
   )
 }

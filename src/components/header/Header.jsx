@@ -15,6 +15,7 @@ function Header() {
         </ul>)
         :(
           <ul className='nav'>
+            <li className="nav-item"><Link to={'/'} className="nav-link links">Home</Link></li>
             <li className='nav-item'><Link onClick={logoutuser} to={'/login'} className='nav-link links'>Logout</Link></li>
             <li className='nav-item'><Link to={'/about'} className='nav-link links'>About  </Link></li>
             <li className='nav-item'><Link to={'/profile'} className="nav-link links">Profile</Link></li>

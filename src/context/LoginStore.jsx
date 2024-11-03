@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {loginContext} from './loginContext'
 import axios from 'axios'
+
 function LoginStore({children}) {
     let [status,setStatus] = useState(false)
     let [err,setErr] = useState('')
@@ -15,7 +16,7 @@ function LoginStore({children}) {
     const loginuser = async (data) => {
         try{
             const response = await axios.get(`http://localhost:3000/users?email=${data.email}`)
-            console.log(response)
+            // console.log(response)
             if(response.data[0]===undefined){
                 setErr('User not found')
             }
@@ -37,7 +38,7 @@ function LoginStore({children}) {
     }
   return (
     <loginContext.Provider value={{loginuser,logoutuser,status,setStatus,err,setErr}}>
-        {children}    
+        {children}
     </loginContext.Provider>
   )
 }

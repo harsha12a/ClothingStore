@@ -13,7 +13,7 @@ function Register() {
         else{
             const response = await axios.post('http://localhost:3000/users',obj)
             if(response.status===201){
-                navigate('/login')
+                navigate('/login',{state:{msg:"Registered successfully"}})
             }
         }
     }
