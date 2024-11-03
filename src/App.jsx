@@ -9,6 +9,7 @@ import Register from './components/register/Register'
 import UserProfile from './components/userprofile/UserProfile'
 import Cart from './components/cart/Cart'
 import Hats from './components/hats/Hats'
+import Shoes from './components/shoes/Shoes'
 function App() {
   const browser = createBrowserRouter([
     {
@@ -34,6 +35,10 @@ function App() {
         {
           path: '/hats',
           element: <Hats />
+        },
+        {
+          path: '/shoes',
+          element: <Shoes />
         },
         {
           path: '/profile',

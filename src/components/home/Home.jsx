@@ -38,7 +38,7 @@ function Home() {
           <img src="https://www.jiomart.com/images/product/original/rvv0jejch6/iloz-stylish-new-luxury-gold-black-men-watch-designer-professional-gold-quartz-fashion-analog-wrist-watch-for-men-product-images-rvv0jejch6-0-202210200514.jpg?im=Resize=(600,750)" alt="Watches" className="img" />
           <p className="desc">Watches</p>
         </Link>
-        <Link className="imgcontainer">
+        <Link to={'/shoes'} className="imgcontainer">
           <img src="https://i.pinimg.com/550x/d9/db/27/d9db2754e78b6170650d7e1d65bcb202.jpg" alt="Shoes" className="img" />
           <p className="desc">Shoes</p>
         </Link>

@@ -126,44 +126,64 @@
     ],
     "shoes": [
       {
+        "id": 1,
         "name": "Nike Sneakers",
-        "price": 100
+        "price": 100,
+        "image": "https://walkmate.co.in/wp-content/uploads/2024/04/14010-scaled.webp"
       },
       {
+        "id": 2,
         "name": "Teva Sandals",
-        "price": 60
+        "price": 60,
+        "image": "https://img.etimg.com/photo/msid-101703740,imgsize-51080/BRUTONMen'sCoscoSportsShoes.jpg"
       },
       {
+        "id": 3,
         "name": "Adidas UltraBoost",
-        "price": 180
+        "price": 180,
+        "image": "https://www.walkaroo.in/cdn/shop/files/3_dfa9180e-980f-4e02-b438-5850425b09cd.jpg?v=1724668131"
       },
       {
+        "id": 4,
         "name": "Converse Chuck Taylor All Star",
-        "price": 55
+        "price": 55,
+        "image": "https://www.walkaroo.in/cdn/shop/files/3_dc0af0f2-6974-45fe-813e-18d58e23bb97.jpg?v=1724665753"
       },
       {
+        "id": 5,
         "name": "Vans Old Skool",
-        "price": 65
+        "price": 65,
+        "image": "https://i.pinimg.com/550x/d9/db/27/d9db2754e78b6170650d7e1d65bcb202.jpg"
       },
       {
+        "id": 6,
         "name": "New Balance 574",
-        "price": 80
+        "price": 80,
+        "image": "https://www.walkaroo.in/cdn/shop/files/01_5206c7e6-6bc2-48d8-b388-52fa2863f5de.jpg?v=1729224243"
       },
       {
+        "id": 7,
         "name": "Crocs Classic Clogs",
-        "price": 50
+        "price": 50,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoCtupLeQnmtxB2J7K_U3NK08L7FrcKB1sWUv93_0-YXr1CBZEpJ9lfX16MBmqcm0nIPE&usqp=CAU"
       },
       {
+        "id": 8,
         "name": "Havaianas Flip Flops",
-        "price": 20
+        "price": 20,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs3Z6FAnpgHvvmXqsSAxqFLQZmGFniqVWK4jPkQaa1aiWoQKRNUudZMHElBSWNjxc5rYQ&usqp=CAU"
       },
       {
+        "id": 9,
         "name": "ASICS Gel-Kayano",
-        "price": 160
+        "price": 160,
+        "image": "https://www.gorideshoes.com/cdn/shop/files/black-shoe-sole-angle.jpg?v=1726904735&width=1946"
       },
       {
+        "id": 10,
         "name": "Brooks Ghost 14",
-        "price": 140
+        "price": 140,
+        "image": "https://m.media-amazon.com/images/I/91rV7Q77MRL.jpg"
       }
     ],
     "clothing": {
