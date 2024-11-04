@@ -10,6 +10,8 @@ import UserProfile from './components/userprofile/UserProfile'
 import Cart from './components/cart/Cart'
 import Hats from './components/hats/Hats'
 import Shoes from './components/shoes/Shoes'
+import Watches from './components/watches/Watches'
+import Men from './components/men/Men'
 function App() {
   const browser = createBrowserRouter([
     {
@@ -39,6 +41,14 @@ function App() {
         {
           path: '/shoes',
           element: <Shoes />
+        },
+        {
+          path: '/watches',
+          element: <Watches />
+        },
+        {
+          path: '/men',
+          element: <Men />
         },
         {
           path: '/profile',

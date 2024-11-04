@@ -22,103 +22,123 @@
   "products": {
     "watches": [
       {
+        "id": 1,
         "name": "Casio F91W",
-        "price": 20
+        "price": 20,
+        "image": "https://cdn4.ethoswatches.com/the-watch-guide/wp-content/uploads/2022/01/All-Black-Watches-Masthead-Mobile.jpg"
       },
       {
+        "id": 2,
         "name": "Apple Watch Series 8",
-        "price": 399
+        "price": 399,
+        "image": "https://www.fastrack.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw84dff9bb/images/Fastrack/Catalog/3272NL01_1.jpg?sw=600&sh=600"
       },
       {
+        "id": 3,
         "name": "Samsung Galaxy Watch 4",
-        "price": 250
+        "price": 250,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRhpQMVy-nAeQZF5Mq0O0tKrezERvTq1xRGYh6ehsV3o_L86ZkATzRcusbCCItei0SGa0&usqp=CAU"
       },
       {
+        "id": 4,
         "name": "Fossil Gen 5",
-        "price": 315
+        "price": 315,
+        "image": "https://www.fastrack.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw783d4629/images/Fastrack/Catalog/3273NL02_1.jpg?sw=360&sh=360"
       },
       {
+        "id": 5,
         "name": "Seiko 5 Automatic",
-        "price": 150
+        "price": 150,
+        "image": "https://www.jiomart.com/images/product/original/rvzv66htre/fastrack-analog-dial-black-band-black-watch-3287nm01-for-men-product-images-rvzv66htre-5-202306261302.jpg?im=Resize=(500,630)"
       },
       {
+        "id": 6,
         "name": "Garmin Forerunner 245",
-        "price": 350
+        "price": 350,
+        "image": "https://content.jdmagicbox.com/quickquotes/images_main/boat-smart-watch-11-12-2023-30-272717068-kwpjhj78.jpg?impolicy=queryparam&im=Resize=(360,360),aspect=fit"
       },
       {
+        "id": 7,
         "name": "Tissot PR 100",
-        "price": 350
+        "price": 350,
+        "image": "https://www.sonatawatches.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwa357f27e/images/Sonata/Catalog/77129PP01W_3.jpg?sw=800&sh=800"
       },
       {
+        "id": 8,
         "name": "Timex Weekender",
-        "price": 40
+        "price": 40,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIXRalIPIPWlIuvQ1hWW_YY21RideZzFU8upFZZq8CL9E_53o0tD0AIm2HeLqFBCgFopA&usqp=CAU"
       },
       {
+        "id": 9,
         "name": "Huawei Watch GT 2",
-        "price": 180
+        "price": 180,
+        "image": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1720973789/Croma%20Assets/Wearable/Wearable%20Devices/Images/308373_qefrwm.png"
       },
       {
+        "id": 10,
         "name": "Michael Kors Runway",
-        "price": 250
+        "price": 250,
+        "image": "https://in.cmf.tech/cdn/shop/files/lightgrey_1c8ff566-49d2-40e7-948f-14f505497770_1200x.png?v=1695698590"
       }
     ],
     "hats": [
       {
-        "id": "1",
+        "id": 1,
         "name": "Carhartt Beanie",
         "price": 25,
         "image": "https://i.pinimg.com/736x/d4/47/18/d44718e1448a19477c1530018c2b04e8.jpg"
       },
       {
-        "id": "2",
+        "id": 2,
         "name": "Adidas Bucket Hat",
         "price": 30,
         "image": "https://m.media-amazon.com/images/I/81pQDgkVfCL._SX679_.jpg"
       },
       {
-        "id": "3",
+        "id": 3,
         "name": "Nike Baseball Cap",
         "price": 28,
         "image": "https://m.media-amazon.com/images/I/61knsxwxbXL._AC_UF894,1000_QL80_.jpg"
       },
       {
-        "id": "4",
+        "id": 4,
         "name": "Puma Trucker Hat",
         "price": 22,
         "image": "https://m.media-amazon.com/images/I/71PLb82PelL._SX679_.jpg"
       },
       {
-        "id": "5",
+        "id": 5,
         "name": "Under Armour Visor",
         "price": 20,
         "image": "https://waycaps.com/cdn/shop/products/v1-solid-velcro-baseball-cap-waycap-inc-17_550x.jpg?v=1704337753"
       },
       {
-        "id": "6",
+        "id": 6,
         "name": "Roxy Sun Hat",
         "price": 35,
         "image": "https://eoncompany.com/cdn/shop/files/NAVY.jpg?v=1724254124&width=1946"
       },
       {
-        "id": "7",
+        "id": 7,
         "name": "Columbia Outdoor Hat",
         "price": 32,
         "image": "https://m.media-amazon.com/images/I/71MkSAi3p1L._AC_UY1100_.jpg"
       },
       {
-        "id": "8",
+        "id": 8,
         "name": "Brixton Fedora",
         "price": 60,
         "image": "https://m.media-amazon.com/images/I/41KcZ7PeNUL._AC_UY1100_.jpg"
       },
       {
-        "id": "9",
+        "id": 9,
         "name": "New Era Snapback",
         "price": 40,
         "image": "https://m.media-amazon.com/images/I/51hsWnr8isL._AC_UY1100_.jpg"
       },
       {
-        "id": "10",
+        "id": 10,
         "name": "Patagonia Capilene Beanie",
         "price": 28,
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs0Lhw_Ii-ozq7TAOjRUd7dHATzxQkOYXFVg&s"
@@ -189,44 +209,64 @@
     "clothing": {
       "men": [
         {
+          "id": 1,
           "name": "H&M T-Shirt",
-          "price": 15
+          "price": 15,
+          "image": "https://i.pinimg.com/736x/65/d2/8d/65d28dde1045245663c31a6fa2d80926.jpg"
         },
         {
+          "id": 2,
           "name": "Levi's Jeans",
-          "price": 60
+          "price": 60,
+          "image": "https://i.pinimg.com/236x/9e/fe/a0/9efea016a3ca8e132ad37c70aa2c7803.jpg"
         },
         {
+          "id": 3,
           "name": "Nike Dri-FIT Shorts",
-          "price": 35
+          "price": 35,
+          "image": "https://i.pinimg.com/736x/d5/ae/4a/d5ae4a69c6b359c7bdbef73c08fb26c6.jpg"
         },
         {
+          "id": 4,
           "name": "Adidas Tracksuit",
-          "price": 70
+          "price": 70,
+          "image": "https://i.pinimg.com/736x/03/ec/d2/03ecd2d4cb28b05c794c16beaec1f2c9.jpg"
         },
         {
+          "id": 5,
           "name": "Polo Ralph Lauren Polo Shirt",
-          "price": 70
+          "price": 70,
+          "image": "https://i.pinimg.com/736x/97/3b/3a/973b3a6774259586929362efaa378d82.jpg"
         },
         {
+          "id": 6,
           "name": "Tommy Hilfiger Hoodie",
-          "price": 80
+          "price": 80,
+          "image": "https://i.pinimg.com/564x/1f/f8/a6/1ff8a63b734fea876014e84fa1d2e106.jpg"
         },
         {
+          "id": 7,
           "name": "Under Armour Compression Shirt",
-          "price": 40
+          "price": 40,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1X_QLCzoltVeTNfm-BWTlQwbIqhSnVUsRRvF5O6-kf3Y6mYRxF9tDSN4Vhe8ztSRnKQI&usqp=CAU"
         },
         {
+          "id": 8,
           "name": "Gap Chino Pants",
-          "price": 50
+          "price": 50,
+          "image": "https://i.pinimg.com/736x/65/1f/4b/651f4be6c313c86004f00574caa00ebc.jpg"
         },
         {
+          "id": 9,
           "name": "Old Navy Button-Up Shirt",
-          "price": 30
+          "price": 30,
+          "image": "https://i.pinimg.com/564x/82/c4/13/82c41320738f2121f5fa0b72c3d5306e.jpg"
         },
         {
+          "id": 10,
           "name": "Zara Casual Jacket",
-          "price": 100
+          "price": 100,
+          "image": "https://i.pinimg.com/474x/fb/3c/3c/fb3c3c6ccbcbdab6528f70a405a5ce47.jpg"
         }
       ],
       "women": [
