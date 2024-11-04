@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import './Register.css'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import {loginContext} from '../../context/loginContext'
 function Register() {
     let {handleSubmit,register,formState:{errors}} = useForm()
     let navigate = useNavigate()
+    let {err, setErr} = useContext(loginContext)
     const reguser = async (obj)=>{
         if(obj.password !== obj.conpassword){
-            alert("Password does not match")
+            setErr('Password does not match')
         }
         else{
+            setErr('')
             obj.cart = []
             const response = await axios.post('http://localhost:3000/users',obj)
             if(response.status===201){
@@ -20,6 +23,9 @@ function Register() {
     }
   return (
     <div className='container mt-5'>
+        {
+            err && <p className='text-danger fs-1 text-center norfont'>{err}</p>
+        }
         <h1 className='text-center'>Register</h1>
         <div className="row">
             <form action="" onSubmit={handleSubmit(reguser)} className='col-sm-10 col-md-6 col-lg-4 m-auto'>
@@ -32,6 +38,13 @@ function Register() {
                     <label htmlFor="email" className='form-label'>Email</label>
                     <input type="email" {...register('email',{required:true})} className='form-control norfont' placeholder='Enter your email'/>
                     {errors.email?.type === 'required' && <p className='text-danger norfont'>*Email is required</p>}
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="contact" className='form-label'>Contact no.</label>
+                    <input type="number" {...register('contact',{required:true,minLength:10,maxLength:10})} className='form-control norfont' placeholder='Enter your contact number'/>
+                    {errors.contact?.type === 'required' && <p className='text-danger norfont'>*Contact no. is required</p>}
+                    {errors.contact?.type === 'minLength' && <p className='text-danger norfont'>*Contact no. must be 10 digits</p>}
+                    {errors.contact?.type === 'maxLength' && <p className='text-danger norfont'>*Contact no. must be 10 digits</p>}
                 </div>
                 <div className="mb-3">
                     <label htmlFor="username" className='form-label'>Username</label>

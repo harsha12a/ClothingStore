@@ -1,21 +1,13 @@
 {
   "users": [
     {
-      "id": "ef13",
-      "name": "Red",
+      "id": "8a47",
+      "name": "red",
       "email": "red@gmail.com",
+      "contact": "1231231231",
       "username": "red",
       "password": "red",
       "conpassword": "red",
-      "cart": []
-    },
-    {
-      "id": "99c9",
-      "name": "blue",
-      "email": "blue@gmail.com",
-      "username": "blue",
-      "password": "blue",
-      "conpassword": "blue",
       "cart": []
     }
   ],
