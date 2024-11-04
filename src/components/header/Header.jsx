@@ -18,7 +18,7 @@ function Header() {
             <li className="nav-item"><Link to={'/'} className="nav-link links">Home</Link></li>
             <li className='nav-item'><Link onClick={logoutuser} to={'/login'} className='nav-link links'>Logout</Link></li>
             <li className='nav-item'><Link to={'/about'} className='nav-link links'>About  </Link></li>
-            <li className='nav-item'><Link to={'/profile'} className="nav-link links">Profile</Link></li>
+            <li className='nav-item'><Link to={'/profile'} className="nav-link links"><img src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_640.png" alt="" width={'30px'} className='rounded-pill'/></Link></li>
           </ul>)}
     </div>
   )
