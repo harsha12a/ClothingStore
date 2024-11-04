@@ -1,19 +1,19 @@
 import React from 'react'
-import MenCloth from './mencloth/MenCloth'
+import WomenCloth from './womencloth/WomenCloth'
 import { useState } from 'react'
 import axios from 'axios'
-function Men() {
+function Women() {
     let [products,setProducts] = useState([])
     axios.get('http://localhost:3000/products').then((res)=>{
-        setProducts(res.data.clothing.men)
+        setProducts(res.data.clothing.women)
       })
   return (
     <div className='mt-5 container'>
-        <h1 className='text-center'>Men CLothing</h1>
+        <h1 className='text-center'>Women CLothing</h1>
         <div className='d-flex flex-wrap justify-content-evenly'>
             {
                 products.map((x,ind)=>{
-                    return <MenCloth key={ind} x={x}/>
+                    return <WomenCloth key={ind} x={x}/>
                 })
             }
         </div>
@@ -21,4 +21,4 @@ function Men() {
   )
 }
 
-export default Men
+export default Women

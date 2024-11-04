@@ -12,6 +12,7 @@ import Hats from './components/hats/Hats'
 import Shoes from './components/shoes/Shoes'
 import Watches from './components/watches/Watches'
 import Men from './components/men/Men'
+import Women from './components/women/Women'
 function App() {
   const browser = createBrowserRouter([
     {
@@ -49,6 +50,10 @@ function App() {
         {
           path: '/men',
           element: <Men />
+        },
+        {
+          path: '/women',
+          element: <Women />
         },
         {
           path: '/profile',

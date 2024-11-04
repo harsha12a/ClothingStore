@@ -271,44 +271,64 @@
       ],
       "women": [
         {
+          "id": 1,
           "name": "ASOS Dress",
-          "price": 50
+          "price": 50,
+          "image": "https://image.made-in-china.com/202f0j00qNihTPWBMdcn/Women-prime-S-Floral-Boho-Slit-Dress-Puff-Sleeve-Square-Neck-MIDI-Dresses.webp"
         },
         {
+          "id": 2,
           "name": "Zara Blouse",
-          "price": 40
+          "price": 40,
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU5jrshSmb3rViWJD8kbm_LIJ0jfa1gfD9FskXNPwcGt_34ttdWD0nI__JVjgFVB2MSr4&usqp=CAU"
         },
         {
+          "id": 3,
           "name": "H&M Maxi Skirt",
-          "price": 30
+          "price": 30,
+          "image": "https://media.karousell.com/media/photos/products/2024/8/1/puff_sleeve_white_floral_dress_1722476145_4d7d32c6_progressive.jpg"
         },
         {
+          "id": 4,
           "name": "Forever 21 Crop Top",
-          "price": 20
+          "price": 20,
+          "image": "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/31/408025/1.jpg?4332"
         },
         {
+          "id": 5,
           "name": "Gap Cardigan",
-          "price": 60
+          "price": 60,
+          "image": "https://assets.ajio.com/medias/sys_master/root/20230814/tS4c/64da16b3eebac147fcc66b3a/-473Wx593H-466453304-white-MODEL.jpg"
         },
         {
+          "id": 6,
           "name": "Mango Wide Leg Pants",
-          "price": 55
+          "price": 55,
+          "image": "https://media2.newlookassets.com/i/newlook/855941809M2/womens/clothing/dresses/black-abstract-shirred-puff-sleeve-midaxi-dress.jpg?strip=true&qlt=50&w=720"
         },
         {
+          "id": 7,
           "name": "Boohoo Jumpsuit",
-          "price": 45
+          "price": 45,
+          "image": "https://image.made-in-china.com/202f0j00UOCWLuyPAFcR/Women-Summer-Puff-Sleeves-Dress-Clothing-Waistless-Floral-Maxi-Boho-Women-Flower-Girl-prime-S-Dresses.webp"
         },
         {
+          "id": 8,
           "name": "Uniqlo Parka",
-          "price": 80
+          "price": 80,
+          "image": "https://image.made-in-china.com/202f0j00sFKVdSngcCpk/Cute-Square-Collar-Puff-Sleeve-White-Cotton-Dress-for-Women-Elegant-Ladies-High-Waist-Short-Sleeve-Solid-White-Dress.webp"
         },
         {
+          "id": 9,
           "name": "Lulus A-Line Skirt",
-          "price": 35
+          "price": 35,
+          "image": "https://i5.walmartimages.com/seo/QIPOPIQ-Clearance-Women-s-Dress-Long-Sleeve-Bohemian-Polka-Dot-Dress-Square-Neck-Puff-Sleeve-Ruffle-Flowy-Beach-Plus-Size-Midi-Dresses-Red-L_f6574972-e579-4b09-a70a-85502a7f3379.dfa7ca05698866e19ad042b271af30b4.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
         },
         {
+          "id": 10,
           "name": "Anthropologie Sweater",
-          "price": 70
+          "price": 70,
+          "image": "https://i5.walmartimages.com/seo/Asklazy-Women-s-Short-Sleeve-Loose-Plain-Maxi-Dresses-Casual-Long-Dresses-with-Pockets_edf29a9d-a5fa-4030-8cc1-af1a73efe22a.ea4872ea2ebb33d320c758c1ceb6b93e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
         }
       ]
     }

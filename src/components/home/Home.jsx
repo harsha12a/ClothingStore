@@ -46,7 +46,7 @@ function Home() {
           <img src="https://media.gq.com/photos/65cfbf6e8aa1eb1e0bb7ecf4/16:9/w_1920,c_limit/gerald-art.jpg" alt="Men clothes" className='img2'/>
           <p className="desc">Men Clothes</p>
         </Link>
-        <Link className="imgcontainer2">
+        <Link to={'/women'} className="imgcontainer2">
           <img src="https://smcfashion.com/cdn/shop/articles/image_-_2024-06-30T132920.880.webp?v=1719742486&width=1344" alt="Women clothes" className="img2" />
           <p className="desc">Women Clothes</p>
         </Link>
