@@ -23,10 +23,6 @@ function Home() {
       });
     }
   },[msg])
-  axios.get('http://localhost:3000/products').then((res)=>{
-    // console.log(res.data)
-    setProducts(res.data)
-  })
   return (
     <div className='container pt-5'>
       <div className='con1'>

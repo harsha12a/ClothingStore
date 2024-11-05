@@ -15,14 +15,13 @@ function LoginStore({children}) {
     })
     const loginuser = async (data) => {
         try{
-            const response = await axios.get(`http://localhost:3000/users?email=${data.email}`)
-            // console.log(response)
-            if(response.data[0]===undefined){
+            const response = await axios.post('http://localhost:5000/user/get',data)
+            if(response.data===undefined){
                 setErr('User not found')
             }
-            else if(response.data[0].password===data.password){
+            else if(response.data){
                 setStatus(true)
-                sessionStorage.setItem('user',JSON.stringify(response.data[0]))
+                sessionStorage.setItem('user',JSON.stringify(response.data.payload))
                 setErr('')
             }
             else setErr('Incorrect password')

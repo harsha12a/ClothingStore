@@ -37,9 +37,9 @@ function Login() {
         <div className='row'>
             <form action="" className='col-sm-10 m-auto col-md-6 col-lg-4' onSubmit={handleSubmit(loginuser)}>
                 <div className="mb-3">
-                    <label htmlFor="email" className='form-label'>Email</label>
-                    <input type="email" id='email' {...register('email',{required:true})} placeholder='Enter your email' className='form-control norfont'/>
-                    {errors.email?.type === 'required' && <p className='text-danger norfont'>*Email is required</p>}
+                    <label htmlFor="username" className='form-label'>Username</label>
+                    <input type="username" id='username' {...register('username',{required:true})} placeholder='Enter your username' className='form-control norfont'/>
+                    {errors.username?.type === 'required' && <p className='text-danger norfont'>*Username is required</p>}
                 </div>
                 <div className="mb-3">
                     <label htmlFor="password" className='form-label'>Password</label>

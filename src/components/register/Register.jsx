@@ -14,9 +14,8 @@ function Register() {
         }
         else{
             setErr('')
-            obj.cart = []
-            const response = await axios.post('http://localhost:3000/users',obj)
-            if(response.status===201){
+            const response = await axios.post('http://localhost:5000/user/create',obj)
+            if(response.status===200){
                 navigate('/login',{state:{msg:"Registered successfully"}})
             }
         }

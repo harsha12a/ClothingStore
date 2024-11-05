@@ -1,12 +1,18 @@
 import React from 'react'
 import WomenCloth from './womencloth/WomenCloth'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 function Women() {
     let [products,setProducts] = useState([])
-    axios.get('http://localhost:3000/products').then((res)=>{
-        setProducts(res.data.clothing.women)
-      })
+    useEffect(()=>{
+        axios.get('http://localhost:5000/women/get')
+        .then((res)=>{
+        setProducts(res.data.payload)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+    },[])
   return (
     <div className='mt-5 container'>
         <h1 className='text-center'>Women CLothing</h1>

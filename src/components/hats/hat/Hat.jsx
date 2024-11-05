@@ -9,17 +9,7 @@ function Hat({x}) {
     user = JSON.parse(user)
     const addToCart= async (id)=>{
       user.cart.push(id)
-      // let newUser = {...user}
-      // console.log(newUser)
-      // try {
-      //   const response = await axios.put(`http://localhost:3000/users?email=${user.email}`,{
-      //     ...user,
-      //     cart: newUser.cart
-      //   });
-      //   console.log("User cart updated on server:", response.data);
-      // }catch (error) {
-      //   console.error("Error updating user cart:", error);
-      // }
+      
     }
   return (
     <div className='p-3 d-flex flex-column justify-content-center m-3 align-items-center border border-dark'>
