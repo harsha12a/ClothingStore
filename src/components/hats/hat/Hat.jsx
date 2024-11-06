@@ -1,14 +1,12 @@
 import React, { useContext } from 'react'
 import './Hat.css'
-import {loginContext} from '../../../context/loginContext'
 import axios from 'axios'
 function Hat({x}) {
     let products=x
-    let {} = useContext(loginContext)
     let user = sessionStorage.getItem('user')
     user = JSON.parse(user)
     const addToCart= async (id)=>{
-      user.cart.push(id)
+      user.cart.hat.push(id)
       
     }
   return (
