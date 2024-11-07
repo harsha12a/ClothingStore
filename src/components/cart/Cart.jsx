@@ -4,7 +4,7 @@ function Cart() {
   let user = sessionStorage.getItem("user");
   user = JSON.parse(user);
   let cart = user.cart;
-  let navigate = useNavigate()
+  let navigate = useNavigate();
   return (
     <div>
       <p className="text-center mt-5 display-3">Cart</p>
@@ -28,7 +28,14 @@ function Cart() {
         })}
       </div>
       <div className="d-flex justify-content-center m-5">
-        <button className="viewmore text-center px-5 py-3" onClick={()=>{navigate('../../')}}>Checkout more products</button>
+        <button
+          className="viewmore text-center px-5 py-3"
+          onClick={() => {
+            navigate("../../");
+          }}
+        >
+          Checkout more products
+        </button>
       </div>
     </div>
   );
