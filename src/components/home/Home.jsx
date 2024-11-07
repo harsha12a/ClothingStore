@@ -6,7 +6,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 function Home() {
-  let [products,setProducts] = useState([])
   let location = useLocation()
   let msg=location.state?.msg
   useEffect(()=>{

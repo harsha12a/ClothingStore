@@ -5,14 +5,16 @@ import axios from 'axios'
 function LoginStore({children}) {
     let [status,setStatus] = useState(false)
     let [err,setErr] = useState('')
+    let user = sessionStorage.getItem('user')
+    user = JSON.parse(user)
     useEffect(()=>{
-        if(sessionStorage.getItem('user')===null){
+        if(user===null){
             setStatus(false)
         }
         else{
             setStatus(true)
         }
-    })
+    },[user])
     const loginuser = async (data) => {
         try{
             const response = await axios.post('http://localhost:5000/user/get',data)
