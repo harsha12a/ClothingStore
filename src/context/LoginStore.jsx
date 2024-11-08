@@ -16,10 +16,10 @@ function LoginStore({ children }) {
   }, [user]);
   const loginuser = async (data) => {
     try {
-      const response = await axios.post("http://localhost:5000/user/get", data);
-      if (response.data === undefined) {
+      const response = await axios.post("https://clothingbackend.vercel.app/user/get", data);
+      if (response.data.payload === undefined) {
         setErr("User not found");
-      } else if (response.data) {
+      } else if (response.data.payload) {
         setStatus(true);
         sessionStorage.setItem("user", JSON.stringify(response.data.payload));
         sessionStorage.setItem("token", response.data.token);

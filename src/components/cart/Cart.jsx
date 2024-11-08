@@ -13,7 +13,7 @@ function Cart() {
   const removeCart = async (products) => {
     try {
       let res =await axios.put(
-        `http://localhost:5000/user/removecart/${user.username}`,
+        `https://clothingbackend.vercel.app/user/removecart/${user.username}`,
         {
           id: products.id,
           type: products.type,
@@ -24,7 +24,6 @@ function Cart() {
           }
         }
       );
-      console.log(res)
       if(res.data.message == 'ok'){
         sessionStorage.setItem("user", JSON.stringify(res.data.payload));
         setCart(res.data.payload.cart)

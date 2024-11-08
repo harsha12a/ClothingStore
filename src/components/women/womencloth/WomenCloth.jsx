@@ -37,7 +37,7 @@ function WomenCloth({ x }) {
       }
       let newUser = { ...user, cart: [...user.cart, products] };
       let res = await axios.put(
-        `http://localhost:5000/user/addcart/${user.username}`,
+        `https://clothingbackend.vercel.app/user/addcart/${user.username}`,
         newUser,
         {
           headers: {

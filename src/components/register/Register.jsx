@@ -18,7 +18,7 @@ function Register() {
     } else {
       setErr("");
       const response = await axios.post(
-        "http://localhost:5000/user/create",
+        "https://clothingbackend.vercel.app/user/create",
         obj
       );
       if (response.status === 200) {

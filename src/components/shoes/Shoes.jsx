@@ -6,7 +6,7 @@ function Shoes() {
   let [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/shoe/get")
+      .get("https://clothingbackend.vercel.app/shoe/get")
       .then((res) => {
         setProducts(res.data.payload);
       })
