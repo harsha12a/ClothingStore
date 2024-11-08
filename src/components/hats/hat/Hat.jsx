@@ -8,6 +8,7 @@ function Hat({ x }) {
   let { setErr } = useContext(loginContext);
   let products = x;
   let user = sessionStorage.getItem("user");
+  let token = sessionStorage.getItem("token");
   user = JSON.parse(user);
   let navigate = useNavigate();
   const addToCart = async () => {
@@ -36,8 +37,12 @@ function Hat({ x }) {
       }
       let newUser = { ...user, cart: [...user.cart, products] };
       let res = await axios.put(
-        `http://localhost:5000/user/addcart/${user.username}`,
-        newUser
+        `http://localhost:5000/user/addcart/${user.username}`,newUser,
+        {
+          headers: {
+            "Authorization": `Bearer ${token}`
+          }
+        }
       );
       sessionStorage.setItem("user", JSON.stringify(newUser));
       toast("🛒 Product added to cart", {

@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useContext } from "react";
+import { loginContext } from "../../context/loginContext";
 function Cart() {
   let user = sessionStorage.getItem("user");
   user = JSON.parse(user);
   let [cart,setCart] = useState(user.cart||[])
+  let {setErr, err} = useContext(loginContext);
   let navigate = useNavigate();
+  let token = sessionStorage.getItem('token')
   const removeCart = async (products) => {
     try {
       let res =await axios.put(
@@ -13,16 +17,29 @@ function Cart() {
         {
           id: products.id,
           type: products.type,
+        },
+        {
+          headers: {
+            "Authorization": `Bearer ${token}`
+          }
         }
       );
-      sessionStorage.setItem("user", JSON.stringify(res.data.payload));
-      setCart(res.data.payload.cart)
+      console.log(res)
+      if(res.data.message == 'ok'){
+        sessionStorage.setItem("user", JSON.stringify(res.data.payload));
+        setCart(res.data.payload.cart)
+        setErr('')
+      }
+      else {
+        setErr('Token expired.Please login again')
+      }
     } catch (err) {
-      console.log(err);
+      setErr('Error while removing from cart');
     }
   };
   return (
     <div>
+      {err && <p className="text-center text-danger display-6 m-4">{err}</p>}
       <p className="text-center mt-5 display-3">Cart</p>
       {cart.length === 0 ? (
         <p className="display-5 text-center text-warning p-5">

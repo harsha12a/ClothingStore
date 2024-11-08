@@ -10,6 +10,7 @@ function WomenCloth({ x }) {
   let user = sessionStorage.getItem("user");
   user = JSON.parse(user);
   let navigate = useNavigate();
+  let token = sessionStorage.getItem("token");
   const addToCart = async () => {
     if (user === null) {
       navigate("/login");
@@ -37,7 +38,12 @@ function WomenCloth({ x }) {
       let newUser = { ...user, cart: [...user.cart, products] };
       let res = await axios.put(
         `http://localhost:5000/user/addcart/${user.username}`,
-        newUser
+        newUser,
+        {
+          headers: {
+            "Authorization": `Bearer ${token}`
+          }
+        }
       );
       sessionStorage.setItem("user", JSON.stringify(newUser));
       toast("🛒 Product added to cart", {

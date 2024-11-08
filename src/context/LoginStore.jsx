@@ -22,6 +22,7 @@ function LoginStore({ children }) {
       } else if (response.data) {
         setStatus(true);
         sessionStorage.setItem("user", JSON.stringify(response.data.payload));
+        sessionStorage.setItem("token", response.data.token);
         setErr("");
       } else setErr("Incorrect password");
     } catch (error) {
