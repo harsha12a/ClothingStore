@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useContext } from "react";
 import { loginContext } from "../../context/loginContext";
+import { toast, ToastContainer, Bounce } from "react-toastify";
 function Cart() {
   let user = sessionStorage.getItem("user");
   user = JSON.parse(user);
@@ -28,6 +29,16 @@ function Cart() {
         sessionStorage.setItem("user", JSON.stringify(res.data.payload));
         setCart(res.data.payload.cart)
         setErr('')
+        toast("🛒 Product removed from cart", {
+          position: "top-center",
+          autoClose: 5000,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Bounce,
+        });
       }
       else {
         setErr('Token expired.Please login again')
@@ -77,6 +88,7 @@ function Cart() {
           Checkout more products
         </button>
       </div>
+      <ToastContainer />
     </div>
   );
 }
