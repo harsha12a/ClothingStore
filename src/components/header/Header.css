@@ -10,3 +10,20 @@
     color: blue !important;
     text-decoration: underline !important;
 }
+svg path{
+    fill: transparent;
+    stroke: black;
+    stroke-width: 0.5;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: fills 4s ease-in-out 1 forwards;
+}
+@keyframes fills{
+    0%{
+        stroke-dashoffset: 1000;
+    }
+    100%{
+        fill: black;
+        stroke-dashoffset: 0;
+    }
+}
