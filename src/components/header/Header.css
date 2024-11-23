@@ -19,7 +19,7 @@ svg path{
     animation: fills 4s ease-in-out 1 forwards;
 }
 @keyframes fills{
-    50%{
+    0%{
         stroke-dashoffset: 1000;
     }
     100%{

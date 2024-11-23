@@ -22,21 +22,8 @@ function Home() {
       });
     }
   }, [msg]);
-  let url = 'https://raw.githubusercontent.com/harsha12a/Assignments-of-fullstack/assets/assets/handsOn/ink.gif'
-  useEffect(()=>{
-    let cache = `${url}?t=${new Date().getTime()}`
-    let style = {
-      maskImage: `url(${cache})`,
-      maskSize: 'cover',
-      maskPosition: 'center'
-    }
-    let mask = document.querySelector('.masking')
-    if(mask){
-      Object.assign(mask.style,style)
-    }
-  },[url])
   return (
-    <div className="container pt-5 masking">
+    <div className="container pt-5">
       <div className="con1">
         <Link to={"/hats"} className="imgcontainer">
           <img
