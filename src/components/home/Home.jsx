@@ -35,7 +35,7 @@ function Home() {
         </Link>
         <Link to={"/watches"} className="imgcontainer">
           <img
-            src="https://www.jiomart.com/images/product/original/rvv0jejch6/iloz-stylish-new-luxury-gold-black-men-watch-designer-professional-gold-quartz-fashion-analog-wrist-watch-for-men-product-images-rvv0jejch6-0-202210200514.jpg?im=Resize=(600,750)"
+            src="https://www.argoswatch.in/cdn/shop/files/ogs-l.jpg?v=1771495563"
             alt="Watches"
             className="img"
           />
